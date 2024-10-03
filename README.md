@@ -29,6 +29,26 @@ windows binary of the last CRAN release of `drat`. You can delete either or
 both (for example via command `pruneRepo()`) and then
 add your own (via `insertPackage()`). 
 
+## Usage
+Source: [https://eddelbuettel.github.io/drat/vignettes/dratstepbystep/](https://eddelbuettel.github.io/drat/vignettes/dratstepbystep/)
+
+```
+library(drat)
+options(dratBranch="docs")   # to default to using docs/ as we set up
+insertPackage(file=c("quacking/quacking_1.2.3.tar.gz", 
+                     "quacking/quacking_1.2.3.zip"), 
+              repodir="drat/")
+```
+
+(the `options` command can be included in "~/.Rprofile" so that it's global). The package to upload on the `drat` repo doesn't have to be in the same folder as the wd, full path can be applied.
+
+Then update the repo with usual `git add`/`git commit -m "..."`/`git push`.
+
+To test whether the package can be installed from your new repository, type in R
+```
+install.packages("quacking", repos="https://yourname.github.io/drat")
+```
+
 ### Author
 
 Dirk Eddelbuettel
