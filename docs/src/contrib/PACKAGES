@@ -1,8 +1,19 @@
-Package: drat
-Version: 0.1.8
-Depends: R (>= 3.2.0)
-Imports: utils
-Suggests: git2r, knitr, rmarkdown
-License: GPL (>= 2)
-MD5sum: 2e7107c8bc567c3e7d1aedbd7aaeb396
-NeedsCompilation: no
+Package: survHEhmc
+Version: 0.0.1
+Depends: R (>= 3.6.0), survHE, dplyr
+Imports: methods, Rcpp (>= 0.12.0), rstan (>= 2.18.1), flexsurv,
+        tibble, rstantools (>= 2.3.0)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+License: MIT + file LICENSE
+MD5sum: c15384c2ce2b443da724d0de29b6d979
+NeedsCompilation: yes
+
+Package: survHEinla
+Version: 0.0.1
+Depends: survHE, R (>= 3.6.0), dplyr
+Imports: flexsurv, INLA
+License: GPL (>= 3)
+MD5sum: debcb9145803f8914fd52b2f21924931
+NeedsCompilation: yes
