@@ -7,7 +7,7 @@ LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
         RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
         2.18.0)
 License: MIT + file LICENSE
-MD5sum: c15384c2ce2b443da724d0de29b6d979
+MD5sum: ff84cf019e8b231b839004b0d8854a8a
 NeedsCompilation: yes
 
 Package: survHEinla
