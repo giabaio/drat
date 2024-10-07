@@ -1,9 +1,9 @@
 Package: bmhe
 Version: 0.1.0
-Depends: tidyverse, BCEA
-Suggests: R2OpenBUGS, R2jags, manipulate
+Depends: ggplot2, dplyr, BCEA
+Suggests: R2OpenBUGS, R2jags, manipulate, purrr, tidyr
 License: CC BY 4.0
-MD5sum: 3b68f2a7e502ef0c49eea0923c0ee741
+MD5sum: b582ae78cc4c8af2bba385a3bbf0e22a
 NeedsCompilation: no
 
 Package: survHEhmc
